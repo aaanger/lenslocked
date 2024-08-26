@@ -2,6 +2,9 @@
 <div class="py-12 flex justify-center">
 <div class="px-8 py-8 bg-white rounded shadow">
     <form action="/signup" method="post">
+       <div class="hidden">
+       {{.CSRFField}}
+       </div>
         <div class="py-2">
             <label for="email" class="text-sm font-semibold text-gray-800">
                 Email Address
